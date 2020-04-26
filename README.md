@@ -2,6 +2,7 @@
 This is a small Java program using Bouncycastle APIs to create a root CA private key and certificate, then use it to sign a server certificate that can then be used on an SSL server.
 Heavily draws inspiration from [minica](https://github.com/jsha/minica)
 
+## Licensed under Apache 2.0 license
 
 ---
 
@@ -15,6 +16,7 @@ The certificate will contain a list of DNS names and/or IP addresses from the co
 
 1. Clone the repository
 2. On a commandline issue `./gradlew clean build`
+3. The uberjar will get built under $PROJECT_HOME/build/libs
  
 ## Usage
-`java -jar java-ca-nb.jar --domains localhost,mydomain.org`
+`java -jar ca-gen.jar --domains localhost,mydomain.org`
