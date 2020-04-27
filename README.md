@@ -11,6 +11,10 @@ So here we are generating actual certificates that are signed by a local CA.
 
 ---
 
+## Root CA certs
+Alonside of the location from which the command was run two files will be placed - the root CA cert file and the root CA key file. 
+Warning: the <>-key.pem file that is generated gives complete power to intercept secure requests from your machine. Do not share it.
+
 ## Server certs
 
 The certificate will contain a list of DNS names and/or IP addresses from the command line flags. The key and certificate are placed in a new directory whose name is chosen as the first domain name from the certificate, or the first IP address if no domain names are present.
